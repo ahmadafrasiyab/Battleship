@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1> {{ title }} </h1>
+<p> Welcome to {{ title }} </p>
+<p id= "Scores"></p>
+<p>{{#if debug}}
+      {{{displayArray}}}
+   {{/if}}
+</p>
+<p>{{{displayBoard}}}</p>
+<form method="POST" action="/processInput">
+   <input type="number" id="number" name="number" />
+   <button type="submit">Submit</button>
+</form>
+</body>
+</html>
+
+

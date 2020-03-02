@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h1> {{ title }} </h1>
+<p>{{#if condition}}
+       You lost since you missed 5 times
+    {{else}}
+       You won since you hit 5 times
+    {{/if}}
+    </p>
+<p> Final score for battleship is as follows:</p>
+<p> Tries: {{countTries}} Misses: {{countMisses}} Hits: {{countHits}} </p>
+</body>
+</html>
